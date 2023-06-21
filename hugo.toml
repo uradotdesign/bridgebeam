@@ -1,0 +1,148 @@
+baseURL = "https://bridgebeam.co"
+title = "Bridgebeam"
+
+defaultContentLanguage = "en"
+languageCode = "en-us"
+defaultContentLanguageInSubdir = true
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = true
+
+pluralizeListTitles = false
+
+[permalinks]
+  # blog = "/blog/:filename/"
+
+[author]
+  name = "Ura Design"
+  email = "hello@ura.design"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Metadata mostly used in document's head
+  description = "Ura is a digital studio which focuses on visual communication solutions tailored for Open Source and Internet Freedom projects."
+  keywords = "design, ux, ui, public, developer, privacy, security, foss, floss"
+  images = ["img/default.png"]
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  gitUrl = "https://github.com/uradotdesign/bridgebeam/commit/"
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#2563EB"
+    msapplication = "#2563EB"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    weight    = 1
+  [[languages.en.menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+    weight     = "1"
+  [[languages.en.menu.main]]
+    identifier = "work"
+    name       = "Work"
+    url        = "/work/"
+    weight     = "2"
+  [[languages.en.menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/contact/"
+    weight     = "3"
+  [[languages.en.menu.main]]
+    identifier = "clients"
+    name       = "Clients"
+    url        = "/clients/"
+    weight     = "4"
+  [[languages.en.menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/blog/"
+    weight     = "5"
+
+  [languages.de]
+    languageName = "Deutsch"
+    contentDir = "content/de"
+    weight    = 2
+  [[languages.de.menu.main]]
+    identifier = "about"
+    name       = "Über uns"
+    url        = "/about/"
+    weight     = "1"
+  [[languages.de.menu.main]]
+    identifier = "Work"
+    name       = "Arbeiten"
+    url        = "/work/"
+    weight     = "2"
+  [[languages.de.menu.main]]
+    identifier = "contact"
+    name       = "Kontakt"
+    url        = "/contact/"
+    weight     = "3"
+  [[languages.de.menu.main]]
+    identifier = "clients"
+    name       = "Kunden"
+    url        = "/clients/"
+    weight     = "4"
+  [[languages.de.menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/blog/"
+    weight     = "5"
+
+[privacy]
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true

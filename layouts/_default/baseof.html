@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="{{ .Site.Language }}" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body class="u-container">
+
+    <svg id="fader" class="fade-out"></svg>
+    <script>fadeInPage()</script>
+
+    <a class="screen-reader-text" href="#content">{{ i18n "skipLink" }}</a>
+
+    {{ partial "header.html" . }}
+
+    <div id="content" class="content">
+        {{ block "main" . }}{{ end }}
+    </div>
+
+    {{ block "footer" . }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<header>
+    <div class="u-grid justify-between">
+        <button id="theme-toggle" class="themetoggle" aria-label="{{ i18n "toggle" }}">
+            <span class="moon" aria-hidden="true">{{ partial "fontawesome.html" "regular/moon" }}</span> <span class="sun" aria-hidden="true">{{ partial "fontawesome.html" "regular/sun-bright" }}</span>
+        </button>
+        {{ if .Site.IsMultiLingual }}
+            {{ range .Site.Languages }}
+                {{ if eq . $.Site.Language }}
+                {{ else }}
+                {{ range $.Translations }}
+                    <a class="language" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <script>
+        let theme = localStorage.getItem("data-theme");
+        const themeToggle = document.querySelector("#theme-toggle");
+
+        const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+        };
+
+        const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", "light");
+        };
+
+        if (theme === "dark") {
+        changeThemeToDark();
+        }
+
+        themeToggle.addEventListener("click", () => {
+        let theme = localStorage.getItem("data-theme");
+        if (theme === "dark") {
+            changeThemeToLight();
+        } else {
+            changeThemeToDark();
+        }
+        });
+    </script>
+
+    {{ if .IsHome }}
+    <div class="u-grid">
+        <div class="hero col-6">
+            {{ partial "logo.html" . }}
+            <h1>{{ i18n "homeTitle" }}</h1>
+            <p>{{ i18n "homeSubtitle" }}</p>
+            <a href="#plans">{{ i18n "viewPlans" }}</a>
+        </div>
+    </div>
+    {{ else }}
+    {{ end }}
+</header>
