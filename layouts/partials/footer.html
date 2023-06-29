@@ -1,4 +1,6 @@
-<footer>
-    <img src="{{ .Site.BaseURL }}/img/ura-logo.svg" alt="Ura Design logo">
-    <p>© Ura Design {{ now.Format "2006" }}<br>{{ i18n "copyright" | markdownify }}</p>
+<footer class="container-fluid">
+    <div class="container">
+        <img src="{{ .Site.BaseURL }}/img/ura-logo.svg" alt="Ura Design logo">
+        <p>© Ura Design {{ now.Format "2006" }}<br>{{ i18n "copyright" | markdownify }}</p>
+    </div>
 </footer>

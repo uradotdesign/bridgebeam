@@ -26,10 +26,6 @@
   --space-xl-2xl: clamp(3rem, calc(2.43rem + 2.86vw), 5rem);
   --space-2xl-3xl: clamp(4rem, calc(3rem + 5vw), 7.5rem);
 
-  --grid-max-width: 90rem;
-  --grid-gutter: var(--space-s-l, clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem));
-  --grid-columns: 14;
-
   /* Custom pairs */
   --space-s-l: clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem);
 
@@ -40,6 +36,13 @@
   --light: flex;
   --dark: none;
   --icon: #{$gray-900};
+  --invert: invert(0);
+  --card-border: 2px solid rgba(24, 24, 27, 1);
+  --card-shadow: 8px 8px 0px 0px rgba(24, 24, 27, 1);
+  --card-background: #{$white};
+  --pill-background: #{$gray-100};
+  --schedule: #{$blue-600};
+  --feature-color: #{$gray-600};
 }
 
 [data-theme="dark"] {
@@ -50,34 +53,13 @@
   --light: none;
   --dark: flex;
   --icon: #{$white};
-}
-
-// Utopian containers and grid
-.u-container {
-  max-width: var(--grid-max-width);
-  padding-inline: var(--grid-gutter);
-  margin-inline: auto;
-
-  & > * + * {
-    margin-top: 1em;
-  }
-}
-
-.u-grid {
-  display: grid;
-  gap: var(--grid-gutter);
-  grid-template-columns: repeat(var(--grid-columns), 1fr);
-}
-
-.justify-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.col-6 {
-  grid-column: span 6 / span 6;
-  align-self: center;
+  --invert: invert(1);
+  --card-border: 2px solid rgba(161, 161, 170, 1);
+  --card-shadow: none;
+  --card-background: #{$gray-700};
+  --pill-background: #{$gray-700};
+  --schedule: #{$blue-300};
+  --feature-color: #{$gray-300};
 }
 
 // Smooth Scrolling and Font Family
@@ -94,9 +76,6 @@ html {
 
 // Body declarations
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: "Mona Sans";
   font-size: var(--step--1);
   color: var(--clr-text);
@@ -141,10 +120,13 @@ header {
   }
 
   & .hero {
+    margin-top: var(--space-2xl);
+
     & a {
       color: $white;
       background-color: $blue-500;
       padding: 1rem 8rem;
+      font-weight: 600;
       text-decoration: none;
 
       &:hover {
@@ -159,6 +141,10 @@ header {
 }
 
 // Links
+a {
+  color: var(--clr-text);
+}
+
 .language {
   position: relative;
   text-decoration: none;
@@ -167,7 +153,7 @@ header {
     content: "";
     position: absolute;
     left: 0;
-    top: .25rem;
+    top: 0.25rem;
     width: 0;
     height: 0.25rem;
     background: transparent;
@@ -176,7 +162,8 @@ header {
     transition: 0.25s ease-in-out;
   }
 
-  &:hover:after, &:focus-visible:after {
+  &:hover:after,
+  &:focus-visible:after {
     width: 100%;
     background: currentColor;
   }
@@ -212,11 +199,21 @@ svg path {
 }
 
 .ura-text:hover path {
-    fill: $blue-500 !important;
+  fill: $blue-500 !important;
 }
 
 .bridge {
-    fill: var(--icon);
+  fill: var(--icon);
+}
+
+#clients {
+  a {
+    text-decoration: none;
+  }
+}
+
+.client-logo {
+  filter: var(--invert);
 }
 
 .themetoggle {
@@ -226,11 +223,7 @@ svg path {
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
-
-  //   display: grid;
-  //   grid-template-columns: max-content max-content;
   align-items: center;
-  //   column-gap: 1rem;
 
   & .inline-svg {
     top: 0;
@@ -271,6 +264,83 @@ details[open] summary svg {
   transform: rotate(180deg);
 }
 
+// Plans
+.card {
+  padding: 2rem;
+  border-radius: 0;
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  color: var(--clr-text);
+  background-color: var(--card-background);
+
+  & .price {
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    & span {
+      font-size: initial;
+      font-weight: 400;
+    }
+  }
+
+  & .rate {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--pill-background);
+    max-width: min-content;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  & .get-started {
+    color: $white;
+    background-color: $blue-500;
+    padding: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #2381de;
+    }
+
+    &:active {
+      background-color: $blue-400;
+    }
+  }
+
+  & .schedule {
+    color: var(--schedule);
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & .included {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  & .feature {
+    display: inline-flex;
+    align-items: center;
+    text-align: start;
+    color: var(--feature-color);
+
+    & .inline-svg {
+      height: 1.15em;
+      width: 1.15em;
+      color: $green-500;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
 // Footer
 footer {
   margin-top: auto !important;
@@ -308,4 +378,10 @@ footer {
   padding: 1rem;
   text-decoration: none;
   z-index: 25;
+}
+
+@include media-breakpoint-down(md) {
+  .card {
+    padding: 1rem;
+  }
 }

@@ -1,6 +1,7 @@
 +++
 title = "Standard"
 subtitle = "Receive answers and support to your design requests"
+icon = "2"
 price = "800"
 rate = "80"
 link = "#"
