@@ -45,8 +45,8 @@
         <h4 class="text-center pb-5">{{ i18n "choosePlansSubtitle" }}</h4>
         <div class="row">
             {{ range where .Site.RegularPages "Type" "plans" }}
-            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3 h-100">
-                <div class="card text-center">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-3">
+                <div class="card text-center h-100">
                     <h3 class="d-flex align-items-center align-self-center"><img class="star me-2" width="32px" src="/img/illustrations/{{ .Page.Params.icon }}.svg" alt="{{ .Title }}"> {{ .Title }}</h3>
                     <p>{{ .Page.Params.subtitle }}</p>
                     <p class="price">€{{ .Page.Params.price }}<span>/mo</span></p>
