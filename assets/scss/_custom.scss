@@ -56,7 +56,7 @@
   --invert: invert(1);
   --card-border: 2px solid rgba(161, 161, 170, 1);
   --card-shadow: none;
-  --card-background: #{$gray-700};
+  --card-background: #{$gray-800};
   --pill-background: #{$gray-700};
   --schedule: #{$blue-300};
   --feature-color: #{$gray-300};
@@ -266,7 +266,7 @@ details[open] summary svg {
 
 // Plans
 .card {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 0;
   border: var(--card-border);
   box-shadow: var(--card-shadow);
@@ -333,10 +333,11 @@ details[open] summary svg {
     color: var(--feature-color);
 
     & .inline-svg {
-      height: 1.15em;
-      width: 1.15em;
+      height: 1.1em;
+      width: 1.1em;
+      top: 0;
       color: $green-500;
-      margin-right: 0.2rem;
+      margin-right: 0.35rem;
     }
   }
 }
