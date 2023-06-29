@@ -1,6 +1,6 @@
 +++
 title = "Branding"
-subtitle = "Heben Sie sich von der Konkurrenz ab und hinterlassen Sie einen bleibenden Eindruck mit einer fesselnden Markenidentität, die bei Ihrer Zielgruppe Anklang findet."
+subtitle = "Hebe dich von der Konkurrenz ab und hinterlasse einen bleibenden Eindruck mit einer ansprechenden Markenidentität, die deine Zielgruppe wirklich anspricht."
 image = "branding"
 weight = 4
 +++
