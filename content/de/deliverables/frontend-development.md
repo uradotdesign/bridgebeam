@@ -1,6 +1,6 @@
 +++
 title = "Frontend-Entwicklung"
-subtitle = "Erwecken Sie Ihre Entwürfe mit nahtlosen und optimierten Websites oder Anwendungen zum Leben, die auf allen Geräten ein außergewöhnliches Benutzererlebnis bieten."
+subtitle = "Erhalte optimierte Websites und Apps, die auf allen Geräten ein wundervolles Benutzererlebnis liefern."
 image = "frontend-development"
 weight = 6
 +++
