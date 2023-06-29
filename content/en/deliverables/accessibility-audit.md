@@ -1,6 +1,6 @@
 +++
 title = "Accessibility Audits"
-subtitle = "Lorem Ipsum dolor sit amet give me money and love"
+subtitle = "Ensure inclusivity and reach a wider audience by identifying and eliminating accessibility barriers in your digital platforms."
 image = "accessibility-audit"
 weight = 2
 +++

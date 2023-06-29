@@ -1,6 +1,6 @@
 +++
 title = "Frontend Development"
-subtitle = "Lorem Ipsum dolor sit amet give me money and love"
+subtitle = "Bring your designs to life with seamless and optimized websites or applications that deliver an exceptional user experience across devices."
 image = "frontend-development"
 weight = 6
 +++

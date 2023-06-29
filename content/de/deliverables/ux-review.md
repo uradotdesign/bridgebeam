@@ -1,6 +1,6 @@
 +++
 title = "UX Reviews"
-subtitle = "Lorem Ipsum dolor sit amet give me money and love"
+subtitle = "Elevate your digital presence with expert analysis and actionable insights, maximizing user satisfaction and driving conversions."
 image = "ux-review"
 weight = 1
 +++
