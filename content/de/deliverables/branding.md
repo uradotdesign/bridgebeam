@@ -1,6 +1,6 @@
 +++
 title = "Branding"
-subtitle = "Stand out from the competition and leave a lasting impression with a captivating brand identity that resonates with your target audience."
+subtitle = "Heben Sie sich von der Konkurrenz ab und hinterlassen Sie einen bleibenden Eindruck mit einer fesselnden Markenidentität, die bei Ihrer Zielgruppe Anklang findet."
 image = "branding"
 weight = 4
 +++

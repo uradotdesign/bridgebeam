@@ -1,6 +1,6 @@
 +++
-title = "Accessibility Audits"
-subtitle = "Ensure inclusivity and reach a wider audience by identifying and eliminating accessibility barriers in your digital platforms."
+title = "Audits zur Barrierefreiheit"
+subtitle = "Sorgen Sie für Inklusion und erreichen Sie ein breiteres Publikum, indem Sie Barrieren auf Ihren digitalen Plattformen identifizieren und beseitigen."
 image = "accessibility-audit"
 weight = 2
 +++

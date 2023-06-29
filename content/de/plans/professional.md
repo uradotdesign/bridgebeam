@@ -1,6 +1,6 @@
 +++
 title = "Professional"
-subtitle = "Receive answers and support to your design requests"
+subtitle = "Inhouse-Qualitätsdesignprozesse mit kürzester Bearbeitungszeit"
 icon = "3"
 price = "2200"
 rate = "69"

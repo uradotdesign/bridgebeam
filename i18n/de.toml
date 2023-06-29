@@ -14,12 +14,6 @@ other = "Skip to content"
 [404Title]
 other = "Nothing to see here. Yet."
 
-[404Description]
-other = "This page seems to be missing. While we look for it, feel free to explore <a class='random-link'>some cool project</a> we have done."
-
-[404DescriptionNoJS]
-other = "This page seems to be missing. While we look for it, feel free to explore <a href='/en/work'>some cool project</a> we have done."
-
 [contact]
 other = "Contact"
 
@@ -27,45 +21,27 @@ other = "Contact"
 other = "Newsletter"
 
 [copyright]
-other = "Some rights reserved. Unless otherwise noted, content on this page is under a [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+other = "Einige Rechte vorbehalten. Sofern nicht anders angegeben, steht der Inhalt dieser Seite unter einer [Creative Commons lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
 
 # Homepage
 [homeTitle]
-other = "Design as a subscription for open source and non-profits"
+other = "Design als Abonnement für Open Source und Non-Profit-Organisationen"
 [homeSubtitle]
-other = "Handle your design requests with experienced designers who understand your organization. No strings attached."
+other = "Bearbeiten Sie Ihre Designanfragen mit erfahrenen Designern, die Ihr Unternehmen verstehen. Keine Bedingungen."
 [viewPlans]
-other = "View Plans"
+other = "Pläne ansehen"
 [deliverables]
-other = "Deliverables"
+other = "Liefergegenstände"
 [choosePlans]
-other = "Choose your plan"
+other = "Wählen Sie Ihren Plan"
 [choosePlansSubtitle]
-other = "Pay monthly. Cancel anytime."
+other = "Zahlen Sie monatlich. Jederzeit kündbar."
 [getStarted]
-other = "Get started"
+other = "Loslegen"
 [scheduleCall]
-other = "Schedule a call"
+other = "Einen Anruf vereinbaren"
 [included]
-other = "What's included"
-
-# Contact
-[getinTouch]
-other = "Get in touch"
-[contactTeam]
-other = "Have a challenge? Get in touch with our team to discuss how we can help."
-[preferCall]
-other = "Prefer to talk over a call?"
-[helpProject]
-other = "Can we help on your project?"
-[contactUs]
-other = "Contact us"
-[weareOn]
-other = "We are on"
-
-# Footer
-[letsTalk]
-other = "Let's talk"
+other = "Was ist inbegriffen?"
 
 [home]
 other = "Home"

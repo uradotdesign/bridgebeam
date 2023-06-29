@@ -1,6 +1,6 @@
 +++
 title = "Standard"
-subtitle = "Receive answers and support to your design requests"
+subtitle = "UI and Branding tailored for your project"
 icon = "2"
 price = "800"
 rate = "80"

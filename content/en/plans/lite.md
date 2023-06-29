@@ -1,6 +1,6 @@
 +++
 title = "Lite"
-subtitle = "Receive answers and support to your design requests"
+subtitle = "Help and support to your design requests"
 icon = "1"
 price = "400"
 rate = "100"
