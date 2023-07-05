@@ -33,7 +33,7 @@ other = "Pläne ansehen"
 [deliverables]
 other = "Liefergegenstände"
 [choosePlans]
-other = "Wählen Sie Ihren Plan"
+other = "Wählen Sie Ihren <span class='accent'>Plan</span>"
 [choosePlansSubtitle]
 other = "Zahlen Sie monatlich. Jederzeit kündbar."
 [getStarted]
@@ -48,6 +48,9 @@ other = "Home"
 
 [notFound]
 other = "Oops, page not found…"
+
+[imprint]
+other = "Impressum"
 
 # posts/single.html
 [readingTime]

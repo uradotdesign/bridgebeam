@@ -25,7 +25,7 @@ other = "Some rights reserved. Unless otherwise noted, content on this page is u
 
 # Homepage
 [homeTitle]
-other = "Design as a subscription for open source and non-profits"
+other = "Supercharge your digital presence with your own UX/UI partner"
 [homeSubtitle]
 other = "Handle your design requests with experienced designers who understand your organization. No strings attached."
 [viewPlans]
@@ -33,11 +33,11 @@ other = "View Plans"
 [deliverables]
 other = "Deliverables"
 [choosePlans]
-other = "Choose your plan"
+other = "Choose your <span class='accent'>plan</span>"
 [choosePlansSubtitle]
 other = "Pay monthly. Cancel anytime."
 [getStarted]
-other = "Get started"
+other = "Subscribe"
 [scheduleCall]
 other = "Schedule a call"
 [included]
@@ -46,6 +46,9 @@ other = "What's included"
 # Footer
 [letsTalk]
 other = "Let's talk"
+
+[imprint]
+other = "Imprint"
 
 [home]
 other = "Home"

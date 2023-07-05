@@ -41,8 +41,11 @@
   --card-shadow: 8px 8px 0px 0px rgba(24, 24, 27, 1);
   --card-background: #{$white};
   --pill-background: #{$gray-100};
+  --feature-background: #{$gray-100};
   --schedule: #{$blue-600};
   --feature-color: #{$gray-600};
+  --plan-span-color: #{$blue-500};
+  --hr-color: #{$gray-300};
 }
 
 [data-theme="dark"] {
@@ -58,8 +61,11 @@
   --card-shadow: none;
   --card-background: #{$gray-800};
   --pill-background: #{$gray-700};
+  --feature-background: #{$gray-800};
   --schedule: #{$blue-300};
   --feature-color: #{$gray-300};
+  --plan-span-color: #{$blue-300};
+  --hr-color: #{$gray-600};
 }
 
 // Smooth Scrolling and Font Family
@@ -123,9 +129,12 @@ header {
     margin-top: var(--space-2xl);
 
     & a {
+      display: block;
+      width: 100%;
       color: $white;
       background-color: $blue-500;
-      padding: 1rem 8rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
       font-weight: 600;
       text-decoration: none;
 
@@ -216,6 +225,41 @@ svg path {
   filter: var(--invert);
 }
 
+#features {
+  .wrap {
+    background-color: var(--feature-background);
+    border-radius: 1rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  .inline-svg {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .col-lg-4:not(:last-of-type) {
+    border-right: 1px solid var(--hr-color);
+  }
+
+  .col-lg-4:not(:first-of-type) {
+    padding-left: 2.5rem;
+  }
+}
+
+#plans {
+  span.accent {
+    color: var(--plan-span-color);
+  }
+}
+
 .themetoggle {
   background: none;
   color: var(--icon);
@@ -226,6 +270,8 @@ svg path {
   align-items: center;
 
   & .inline-svg {
+    height: 1.35em;
+    width: 1.35em;
     top: 0;
     border-radius: 0.25rem;
   }
@@ -243,9 +289,9 @@ details summary::-webkit-details-marker {
 details summary {
   position: relative;
   list-style: none;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.25rem;
-  color: $blue-500;
+  color: var(--clr-text);
   cursor: pointer;
   margin-block: 1.25rem;
   display: flex;
@@ -267,7 +313,7 @@ details[open] summary svg {
 // Plans
 .card {
   padding: 1.5rem;
-  border-radius: 0;
+  border-radius: 1rem;
   border: var(--card-border);
   box-shadow: var(--card-shadow);
   color: var(--clr-text);
@@ -297,6 +343,7 @@ details[open] summary svg {
     color: $white;
     background-color: $blue-500;
     padding: 1rem;
+    border-radius: 0.5rem;
     font-weight: 600;
     text-decoration: none;
 
@@ -338,6 +385,10 @@ details[open] summary svg {
       top: 0;
       color: $green-500;
       margin-right: 0.35rem;
+    }
+
+    &:last-of-type {
+      margin-bottom: 2rem;
     }
   }
 }
@@ -384,5 +435,11 @@ footer {
 @include media-breakpoint-down(md) {
   .card {
     padding: 1rem;
+  }
+  #features .col-lg-4:not(:last-of-type) {
+    border-right: none;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--hr-color);
   }
 }

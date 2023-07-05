@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section id="clients" class="container-fluid pt-4 pb-5">
+<section id="clients" class="container-fluid pt-5 pb-4">
     <div class="container justify-content-center">
         <div class="row justify-content-center">
             <div class="col-lg-9 col-12">
@@ -17,17 +17,42 @@
     </div>
 </section>
 
+<section id="features" class="container-fluid pb-5">
+    <div class="container justify-content-center">
+        <div class="row justify-content-center wrap">
+            <div class="col-lg-11 col-12 p-5">
+                <div class="row justify-content-between">
+                    {{ range where .Site.RegularPages "Type" "features" }}
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                {{ $icon := .Page.Params.icon }}
+                                {{ partial "fontawesome.html" $icon }}
+                            </div>
+                            <div class="col-9">
+                                <h4 clas="mb-0">{{ .Title }}</h4>
+                                <p class="mb-0">{{ .Page.Params.subtitle }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="deliverables" class="container-fluid py-5">
     <div class="container justify-content-between">
         <h2 class="text-center pb-4">{{ i18n "deliverables" }}</h2>
         <div class="row pt-4">
             {{ range where .Site.RegularPages "Type" "deliverables" }}
-            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-5 h-100">
-                <div class="row">
-                    <div class="col-md-12 col-4">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-4 mb-lg-5 h-100">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-4 col-4">
                         <img class="img-fluid" src="/img/illustrations/{{ .Page.Params.image }}.png" alt="{{ .Page.Params.name }}">
                     </div>
-                    <div class="col-md-12 col-8">
+                    <div class="col-lg-6 col-md-8 col-8">
                         <h3>{{ .Title }}</h3>
                         <p class="mb-0">{{ .Page.Params.subtitle }}</p>
                     </div>
@@ -41,7 +66,7 @@
 
 <section id="plans" class="container-fluid py-5">
     <div class="container justify-content-between">
-        <h2 class="text-center pb-0">{{ i18n "choosePlans" }}</h2>
+        <h2 class="text-center pb-0">{{ i18n "choosePlans" | markdownify }}</h2>
         <h4 class="text-center pb-5">{{ i18n "choosePlansSubtitle" }}</h4>
         <div class="row">
             {{ range where .Site.RegularPages "Type" "plans" }}
@@ -51,17 +76,34 @@
                     <p>{{ .Page.Params.subtitle }}</p>
                     <p class="price">€{{ .Page.Params.price }}<span>/mo</span></p>
                     <div class="text-center"><p class="rate">{{ .Page.Params.rate }}€/hr</p></div>
-                    <a class="get-started" href="{{ .Page.Params.link }}" rel="noopener noreferrer" target="_blank">{{ i18n "getStarted" }}</a>
                     <a class="schedule" href="{{ .Page.Params.call }}" rel="noopener noreferrer" target="_blank">{{ i18n "scheduleCall" }}</a>
                     <hr>
                     <p class="included text-start">{{ i18n "included" }}</p>
                     {{ range .Param "features" }}
                         <p class="feature">{{ partial "fontawesome.html" "solid/check" }} {{ . }}</p>
                     {{ end }}
+                    <a class="get-started mt-auto" href="{{ .Page.Params.link }}" rel="noopener noreferrer" target="_blank">{{ i18n "getStarted" }}</a>
                 </div>
             </div>
             {{ end }}
         </div>
     </div>
 </section>
+
+<section id="faq" class="container-fluid py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                {{ $lang := .Site.Language }}
+                {{ range $.Site.Data.en }}
+                <details>
+                    <summary>{{ .question }} {{ partial "fontawesome.html" "solid/chevron-down" }}</summary>
+                    <p>{{ .answer | markdownify }}</p>
+                </details>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
 {{ end }}
+
