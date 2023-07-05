@@ -23,13 +23,13 @@
             <div class="col-lg-11 col-12 p-5">
                 <div class="row justify-content-between">
                     {{ range where .Site.RegularPages "Type" "features" }}
-                    <div class="col-lg-4 col-md-4 col-12">
+                    <div class="col-lg-4 col-12">
                         <div class="row align-items-center">
                             <div class="col-auto">
                                 {{ $icon := .Page.Params.icon }}
                                 {{ partial "fontawesome.html" $icon }}
                             </div>
-                            <div class="col-9">
+                            <div class="col-8">
                                 <h4 clas="mb-0">{{ .Title }}</h4>
                                 <p class="mb-0">{{ .Page.Params.subtitle }}</p>
                             </div>
@@ -47,7 +47,7 @@
         <h2 class="text-center pb-4">{{ i18n "deliverables" }}</h2>
         <div class="row pt-4">
             {{ range where .Site.RegularPages "Type" "deliverables" }}
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-4 mb-lg-5 h-100">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5 h-100">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-4 col-4">
                         <img class="img-fluid" src="/img/illustrations/{{ .Page.Params.image }}.png" alt="{{ .Page.Params.name }}">
@@ -91,9 +91,10 @@
 </section>
 
 <section id="faq" class="container-fluid py-5">
-    <div class="container">
+    <div class="container">.
+        <h2 class="text-center pb-4">{{ i18n "faq" }}</h2>
         <div class="row justify-content-center">
-            <div class="col-lg-7">
+            <div class="col-lg-8 col-12">
                 {{ $lang := .Site.Language }}
                 {{ range $.Site.Data.en }}
                 <details>

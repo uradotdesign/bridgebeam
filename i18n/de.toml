@@ -52,6 +52,9 @@ other = "Oops, page not found…"
 [imprint]
 other = "Impressum"
 
+[faq]
+other = "Frequently Asked Questions"
+
 # posts/single.html
 [readingTime]
 one   = "1 min read"

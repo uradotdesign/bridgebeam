@@ -67,69 +67,21 @@ pluralizeListTitles = false
 
   # Colors for favicons
   [params.favicon.color]
-    mask = "#2563EB"
-    msapplication = "#2563EB"
+    mask = "#1f78d1"
+    msapplication = "#1f78d1"
+
+disableLanguages = ["de"]
 
 [languages]
   [languages.en]
     languageName = "English"
     contentDir = "content/en"
     weight    = 1
-  [[languages.en.menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about/"
-    weight     = "1"
-  [[languages.en.menu.main]]
-    identifier = "work"
-    name       = "Work"
-    url        = "/work/"
-    weight     = "2"
-  [[languages.en.menu.main]]
-    identifier = "contact"
-    name       = "Contact"
-    url        = "/contact/"
-    weight     = "3"
-  [[languages.en.menu.main]]
-    identifier = "clients"
-    name       = "Clients"
-    url        = "/clients/"
-    weight     = "4"
-  [[languages.en.menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/blog/"
-    weight     = "5"
 
   [languages.de]
     languageName = "Deutsch"
     contentDir = "content/de"
     weight    = 2
-  [[languages.de.menu.main]]
-    identifier = "about"
-    name       = "Über uns"
-    url        = "/about/"
-    weight     = "1"
-  [[languages.de.menu.main]]
-    identifier = "Work"
-    name       = "Arbeiten"
-    url        = "/work/"
-    weight     = "2"
-  [[languages.de.menu.main]]
-    identifier = "contact"
-    name       = "Kontakt"
-    url        = "/contact/"
-    weight     = "3"
-  [[languages.de.menu.main]]
-    identifier = "clients"
-    name       = "Kunden"
-    url        = "/clients/"
-    weight     = "4"
-  [[languages.de.menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/blog/"
-    weight     = "5"
 
 [privacy]
   [privacy.instagram]
