@@ -310,6 +310,32 @@ details[open] summary svg {
   transform: rotate(180deg);
 }
 
+/* add wrapper, continue with font-size */
+@keyframes invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 1em;
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details[open] .summary {
+  animation-name: invisiblyGrowFontSize, fadeIn;
+  animation-duration: 500ms, 200ms;
+  animation-delay: 0ms, 500ms;
+}
+
 // Plans
 .card {
   padding: 1.5rem;
@@ -441,5 +467,9 @@ footer {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--hr-color);
+  }
+
+  #features .col-lg-4:not(:first-of-type) {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
   }
 }
