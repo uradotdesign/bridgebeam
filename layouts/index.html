@@ -7,7 +7,7 @@
                     {{ range where .Site.RegularPages "Type" "clients" }}
                     <div class="col-lg-2 col-md-4 col-4 text-center">
                         <a href="{{ .Page.Params.link }}" target="_blank" rel="noopener noreferrer">
-                            <img class="client-logo" src="/img/clients/{{ .Page.Params.image }}.svg" alt="{{ .Page.Params.name }}">
+                            <img class="img-fluid client-logo" src="/img/clients/{{ .Page.Params.image }}.svg" alt="{{ .Page.Params.name }}">
                         </a>
                     </div>
                     {{ end }}
@@ -50,7 +50,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5 h-100">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-4 col-4">
-                        <img class="img-fluid" src="/img/illustrations/{{ .Page.Params.image }}.png" alt="{{ .Page.Params.name }}">
+                        <img class="img-fluid" src="/img/illustrations/{{ .Page.Params.image }}.png" alt="{{ .Page.Params.name }}" loading="lazy">
                     </div>
                     <div class="col-lg-6 col-md-8 col-8">
                         <h3>{{ .Title }}</h3>
@@ -72,7 +72,7 @@
             {{ range where .Site.RegularPages "Type" "plans" }}
             <div class="col-lg-4 col-12 mb-4 mb-lg-3">
                 <div class="card text-center h-100">
-                    <h3 class="d-flex align-items-center align-self-center"><img class="star me-2" width="32px" src="/img/illustrations/{{ .Page.Params.icon }}.svg" alt="{{ .Title }}"> {{ .Title }}</h3>
+                    <h3 class="d-flex align-items-center align-self-center"><img class="star me-2" width="32px" src="/img/illustrations/{{ .Page.Params.icon }}.svg" alt="{{ .Title }}" loading="lazy"> {{ .Title }}</h3>
                     <p>{{ .Page.Params.subtitle }}</p>
                     <p class="price">€{{ .Page.Params.price }}<span>/mo</span></p>
                     <div class="text-center"><p class="rate">{{ .Page.Params.rate }}€/hr</p></div>
