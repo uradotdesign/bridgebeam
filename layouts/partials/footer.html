@@ -2,6 +2,13 @@
     <div class="container">
         <img src="{{ .Site.BaseURL }}/img/ura-logo.svg" alt="Ura Design logo">
         <p>© Ura Design {{ now.Format "2006" }}<br>{{ i18n "copyright" | markdownify }}</p>
-        <a href="{{ absLangURL "/imprint" }}">{{ i18n "imprint" }}</a>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://github.com/uradotdesign/bridgebeam" rel="noopener noreferrer" target="_blank">{{ i18n "source" }}</a>
+            </div>
+            <div class="col-auto">
+                <a href="{{ absLangURL "/imprint" }}">{{ i18n "imprint" }}</a>
+            </div>
+        </div>
     </div>
 </footer>

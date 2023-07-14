@@ -1,9 +1,17 @@
 <header class="container-fluid text-start text-sm-center">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <button id="theme-toggle" class="themetoggle" aria-label="{{ i18n "toggle" }}">
-                <span class="moon" aria-hidden="true">{{ partial "fontawesome.html" "regular/moon" }}</span> <span class="sun" aria-hidden="true">{{ partial "fontawesome.html" "regular/sun-bright" }}</span>
-            </button>
+
+            <div class="dropdown">
+                <button class="themetoggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="moon" aria-hidden="true">{{ partial "fontawesome.html" "regular/moon" }}</span> <span class="sun" aria-hidden="true">{{ partial "fontawesome.html" "regular/sun-bright" }}</span>
+                </button>
+                <ul class="dropdown-menu mt-2">
+                    <li><button id="light-theme" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false"><span class="me-2">{{ partial "fontawesome.html" "regular/sun-bright" }}</span> Light</button></li>
+                    <li><button id="dark-theme" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false"><span class="me-2">{{ partial "fontawesome.html" "regular/moon" }}</span> Dark</button></li>
+                </ul>
+              </div>
+            
             {{ partial "logo.html" . }}
             {{ if .Site.IsMultiLingual }}
                 {{ range .Site.Languages }}
@@ -20,29 +28,35 @@
 
     <script>
         let theme = localStorage.getItem("data-theme");
-        const themeToggle = document.querySelector("#theme-toggle");
+        const lightTheme = document.querySelector("#light-theme");
+        const darkTheme = document.querySelector("#dark-theme");
 
         const changeThemeToDark = () => {
         document.documentElement.setAttribute("data-theme", "dark");
         localStorage.setItem("data-theme", "dark");
+        darkTheme.setAttribute("aria-pressed", true);
+        lightTheme.setAttribute("aria-pressed", false);
         };
 
         const changeThemeToLight = () => {
         document.documentElement.setAttribute("data-theme", "light");
         localStorage.setItem("data-theme", "light");
+        lightTheme.setAttribute("aria-pressed", true);
+        darkTheme.setAttribute("aria-pressed", false);
         };
 
         if (theme === "dark") {
         changeThemeToDark();
         }
 
-        themeToggle.addEventListener("click", () => {
+        lightTheme.addEventListener("click", () => {
         let theme = localStorage.getItem("data-theme");
-        if (theme === "dark") {
             changeThemeToLight();
-        } else {
+        });
+
+        darkTheme.addEventListener("click", () => {
+        let theme = localStorage.getItem("data-theme");
             changeThemeToDark();
-        }
         });
     </script>
 

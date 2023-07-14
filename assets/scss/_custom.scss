@@ -40,6 +40,9 @@
   --card-border: 2px solid rgba(24, 24, 27, 1);
   --card-shadow: 8px 8px 0px 0px rgba(24, 24, 27, 1);
   --card-background: #{$white};
+  --dropdown-text: #{$gray-800};
+  --dropdown-background: #{$white};
+  --dropdown-hover: #{$gray-100};
   --pill-background: #{$gray-100};
   --feature-background: #{$gray-100};
   --schedule: #{$blue-600};
@@ -60,6 +63,9 @@
   --card-border: 2px solid rgba(161, 161, 170, 1);
   --card-shadow: none;
   --card-background: #{$gray-800};
+  --dropdown-text: #{$white};
+  --dropdown-background: #{$gray-800};
+  --dropdown-hover: #{$gray-700};
   --pill-background: #{$gray-700};
   --feature-background: #{$gray-800};
   --schedule: #{$blue-300};
@@ -195,12 +201,12 @@ svg path {
 
 .sun,
 .open {
-  display: var(--dark);
+  display: var(--light);
 }
 
 .moon,
 .close {
-  display: var(--light);
+  display: var(--dark);
 }
 
 .dim {
@@ -209,6 +215,10 @@ svg path {
 
 .ura-text:hover path {
   fill: $blue-500 !important;
+}
+
+.ura-text:hover path.nohover {
+  fill: var(--clr-text) !important; 
 }
 
 .bridge {
@@ -287,6 +297,29 @@ svg path {
 
   &:focus-visible {
     outline: 2px solid var(--clr-text);
+  }
+}
+
+// Dropdown toggle
+.dropdown-menu {
+  min-width: max-content;
+  background-color: var(--dropdown-background);
+  padding-block: 0.2rem;
+
+  & button {
+    padding-block: 0.35rem;
+    padding-inline: 1rem;
+    color: var(--dropdown-text);
+
+    &:hover {
+      color: var(--dropdown-text);
+      background-color: var(--dropdown-hover);
+    }
+
+    &:active {
+      color: var(--dropdown-text);
+      background-color: var(--dropdown-hover);
+    }
   }
 }
 

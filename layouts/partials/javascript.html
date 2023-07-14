@@ -1,4 +1,4 @@
-{{ $main := resources.Get "js/main.js" }}
+{{ $main := resources.Get "js/bootstrap.bundle.min.js" }}
 {{ $secureJS := slice $main | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha256" }}
 <script src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 

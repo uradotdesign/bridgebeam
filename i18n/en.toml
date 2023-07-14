@@ -50,6 +50,9 @@ other = "Let's talk"
 [imprint]
 other = "Imprint"
 
+[source]
+other = "Source code"
+
 [faq]
 other = "Frequently Asked Questions"
 
