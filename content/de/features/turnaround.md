@@ -1,6 +1,6 @@
 +++
-title = "Quick turnaround"
-subtitle = "2-5 working days/task"
+title = "Schnelle Erledigung"
+subtitle = "2-5 Arbeitstage/Anfrage"
 icon = "regular/bolt"
 weight = 1
 +++

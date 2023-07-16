@@ -1,6 +1,6 @@
 +++
 title = "UX/UI Design"
-subtitle = "Erstellen Sie visuell beeindruckende und benutzerfreundliche Oberflächen, die Ihre Kunden in ihren Bann ziehen, das Engagement erhöhen und Ihren Gewinn steigern."
+subtitle = "Erhalte visuell beeindruckende und benutzerfreundliche Oberflächen, die Kunden in deine Bann ziehen, das Engagement erhöhen und deinen Gewinn steigern."
 image = "ux-ui-design"
 weight = 5
 +++

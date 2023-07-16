@@ -56,6 +56,12 @@ other = "Source code"
 [faq]
 other = "Frequently Asked Questions"
 
+[hour]
+other = "hr"
+
+[month]
+other = "Mo"
+
 [home]
 other = "Home"
 
