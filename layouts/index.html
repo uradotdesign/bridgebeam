@@ -50,7 +50,8 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5 h-100">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-4 col-4">
-                        <img class="img-fluid" src="/img/illustrations/{{ .Page.Params.image }}.png" alt="{{ .Page.Params.name }}" loading="lazy">
+                        <img class="img-fluid light-only" src="/img/illustrations/{{ .Page.Params.image }}.png" alt="{{ .Page.Params.name }}" loading="lazy">
+                        <img class="img-fluid dark-only" src="/img/illustrations/{{ .Page.Params.image }}-dark.png" alt="{{ .Page.Params.name }}" loading="lazy">
                     </div>
                     <div class="col-lg-6 col-md-8 col-8">
                         <h3>{{ .Title }}</h3>
@@ -74,6 +75,7 @@
                 <div class="card text-center h-100">
                     <h3 class="d-flex align-items-center align-self-center"><img class="star me-2" width="32px" src="/img/illustrations/{{ .Page.Params.icon }}.svg" alt="{{ .Title }}" loading="lazy"> {{ .Title }}</h3>
                     <p class="mb-1">{{ .Page.Params.subtitle }}</p>
+                    {{ if eq .Page.Params.weight 1 }}<div class="text-center"><p class="default">{{ i18n "default" }}</p></div>{{ end }}
                     {{ with .Page.Params.saving }}<div class="text-center"><p class="discount">{{ . }} savings</p></div>{{ end }}
                     <p class="price mb-0">€{{ .Page.Params.price }}<span>/{{ i18n "month" }}</span></p>
                     <div class="text-center"><p class="rate">{{ .Page.Params.rate }}€/{{ i18n "hour" }}</p></div>

@@ -58,6 +58,9 @@ other = "Source code"
 [faq]
 other = "Frequently Asked Questions"
 
+[default]
+other = "Default pricing"
+
 [hour]
 other = "Std"
 

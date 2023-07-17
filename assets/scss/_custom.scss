@@ -37,6 +37,7 @@
   --dark: none;
   --icon: #{$gray-900};
   --invert: invert(0);
+  --divider: #{$gray-300};
   --card-border: 2px solid rgba(24, 24, 27, 1);
   --card-shadow: 8px 8px 0px 0px rgba(24, 24, 27, 1);
   --card-background: #{$white};
@@ -45,6 +46,8 @@
   --dropdown-hover: #{$gray-100};
   --pill-background: #{$gray-100};
   --feature-background: #{$gray-100};
+  --default-text: #{$gray-600};
+  --default-border: #{$gray-300};
   --discount-text: #{$green-900};
   --discount-background: #{$green-200};
   --schedule: #{$blue-600};
@@ -62,6 +65,7 @@
   --dark: flex;
   --icon: #{$white};
   --invert: invert(1);
+  --divider: #{$gray-600};
   --card-border: 2px solid rgba(161, 161, 170, 1);
   --card-shadow: none;
   --card-background: #{$gray-800};
@@ -70,6 +74,8 @@
   --dropdown-hover: #{$gray-700};
   --pill-background: #{$gray-700};
   --feature-background: #{$gray-800};
+  --default-text: #{$gray-300};
+  --default-border: #{$gray-700};
   --discount-text: #{$green-200};
   --discount-background: #{$green-900};
   --schedule: #{$blue-300};
@@ -203,12 +209,14 @@ a {
 }
 
 .sun,
-.open {
+.open,
+.light-only {
   display: var(--light);
 }
 
 .moon,
-.close {
+.close,
+.dark-only {
   display: var(--dark);
 }
 
@@ -348,7 +356,7 @@ details summary {
 }
 
 details:not(:last-of-type) {
-  border-bottom: 1px solid $gray-300;
+  border-bottom: 1px solid var(--divider);
 }
 
 details[open] summary svg {
@@ -376,22 +384,31 @@ details[open] summary svg {
 
   & .rate {
     display: inline-block;
-    padding: 0.25rem 0.5rem;
+    padding: 0.1rem 0.5rem;
     border-radius: 0.25rem;
     background-color: var(--pill-background);
     max-width: min-content;
-    font-weight: 500;
+  }
+
+  & .default {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    margin-bottom: .5rem;
+    border-radius: 0.25rem;
+    color: var(--default-text);
+    border: 1px solid var(--default-border);
+    background: transparent;
+    max-width: max-content;
   }
 
   & .discount {
     display: inline-block;
-    padding: 0.25rem 0.5rem;
+    padding: 0.1rem 0.5rem;
     margin-bottom: .5rem;
     border-radius: 0.25rem;
     color: var(--discount-text);
     background-color: var(--discount-background);
     max-width: max-content;
-    font-weight: 500;
   }
 
   & .get-started {
