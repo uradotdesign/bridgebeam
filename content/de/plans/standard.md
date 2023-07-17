@@ -1,6 +1,6 @@
 +++
 title = "Standard"
-subtitle = "UI und Branding maßgeschneidert für dein Projekt"
+subtitle = "UI und Branding maßgeschneidert für dich"
 icon = "2"
 price = "800"
 rate = "80"
