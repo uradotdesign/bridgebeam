@@ -96,8 +96,8 @@
         <h2 class="text-center pb-4">{{ i18n "faq" }}</h2>
         <div class="row justify-content-center">
             <div class="col-lg-8 col-12">
-                {{ $lang := .Site.Language }}
-                {{ range .Site.Data.en }}
+                {{ $lang := .Site.Language.Lang }}
+                {{ range index .Site.Data $lang }}
                 <details>
                     <summary>{{ .question }} {{ partial "fontawesome.html" "solid/chevron-down" }}</summary>
                     <div class="summary">
