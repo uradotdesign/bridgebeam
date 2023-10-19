@@ -23,6 +23,9 @@ other = "Newsletter"
 [copyright]
 other = "Some rights reserved. Unless otherwise noted, content on this page is under a [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
 
+[customer-portal]
+other = "Account"
+
 # Homepage
 [homeTitle]
 other = "Supercharge your digital presence with your own UX/UI partner"

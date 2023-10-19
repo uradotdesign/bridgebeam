@@ -74,12 +74,12 @@ disableLanguages = ["de"]
 
 [languages]
   [languages.en]
-    languageName = "English"
+    languageName = "EN"
     contentDir = "content/en"
     weight    = 1
 
   [languages.de]
-    languageName = "Deutsch"
+    languageName = "DE"
     contentDir = "content/de"
     weight    = 2
 
