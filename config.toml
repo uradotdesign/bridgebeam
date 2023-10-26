@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://bridgebeam.design"
 title = "Bridgebeam"
 
 defaultContentLanguage = "en"
