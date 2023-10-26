@@ -1,10 +1,11 @@
 +++
+type = "annually"
 title = "Standard"
 subtitle = "UI und Branding maßgeschneidert für dich"
 icon = "2"
-price = "800"
+price = "8.000"
 rate = "80"
-saving = "20%"
+saving = "2"
 link = "https://buy.stripe.com/cN202K1LJ0PB5G0cMN"
 call = "https://cal.com/bridgebeam/standard"
 weight = 2

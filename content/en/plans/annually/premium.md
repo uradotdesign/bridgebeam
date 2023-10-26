@@ -1,10 +1,11 @@
 +++
+type = "annually"
 title = "Premium"
 subtitle = "Full design and development life-cycle"
 icon = "3"
-price = "2200"
+price = "22,000"
 rate = "69"
-saving = "31%"
+saving = "2"
 link = "https://buy.stripe.com/3cs7vcaifcyjgkEaEG"
 call = "https://cal.com/bridgebeam/premium"
 weight = 3

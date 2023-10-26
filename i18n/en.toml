@@ -38,7 +38,13 @@ other = "Deliverables"
 [choosePlans]
 other = "Choose your <span class='accent'>plan</span>"
 [choosePlansSubtitle]
-other = "Pay monthly. Cancel anytime."
+other = "Pay monthly or annually."
+[monthly]
+other = "Monthly"
+[sixmonths]
+other = "6 Months"
+[annually]
+other = "Annually"
 [getStarted]
 other = "Subscribe"
 [scheduleCall]
@@ -62,11 +68,24 @@ other = "Frequently Asked Questions"
 [default]
 other = "Default pricing"
 
+[saving]
+other = "savings"
+
 [hour]
 other = "hr"
 
 [month]
-other = "Mo"
+other = "mo"
+
+[month-free]
+one = "month free"
+other = "months free"
+
+[six-months]
+other = "6mo"
+
+[year]
+other = "yr"
 
 [home]
 other = "Home"

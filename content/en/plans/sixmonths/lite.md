@@ -1,8 +1,9 @@
 +++
+type = "sixmonths"
 title = "Lite"
 subtitle = "Help and support to your design requests"
 icon = "1"
-price = "400"
+price = "2,000"
 rate = "100"
 link = "https://buy.stripe.com/7sIaHo61Zaqb7O8aEE"
 call = "https://cal.com/bridgebeam/lite"

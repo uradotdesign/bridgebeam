@@ -38,7 +38,13 @@ other = "Liefergegenstände"
 [choosePlans]
 other = "Wähle deinen <span class='accent'>Plan</span>"
 [choosePlansSubtitle]
-other = "Zahle monatlich. Jederzeit kündbar."
+other = "Zahle monatlich oder jährlich."
+[monthly]
+other = "Monatlich"
+[sixmonths]
+other = "6 Monate"
+[annually]
+other = "Jährlich"
 [getStarted]
 other = "Abonnieren"
 [scheduleCall]
@@ -62,13 +68,26 @@ other = "Source code"
 other = "Frequently Asked Questions"
 
 [default]
-other = "Default pricing"
+other = "Standardpreise"
+
+[saving]
+other = "sparen"
 
 [hour]
 other = "Std"
 
 [month]
 other = "Mo"
+
+[month-free]
+one = "monat kostenlos"
+other = "monat kostenlos"
+
+[six-months]
+other = "6Mo"
+
+[year]
+other = "Jr"
 
 # posts/single.html
 [readingTime]

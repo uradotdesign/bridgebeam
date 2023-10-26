@@ -1,10 +1,11 @@
 +++
+type = "sixmonths"
 title = "Standard"
 subtitle = "UI and Branding tailored for your project"
 icon = "2"
-price = "800"
+price = "4,000"
 rate = "80"
-saving = "20%"
+saving = "1"
 link = "https://buy.stripe.com/cN202K1LJ0PB5G0cMN"
 call = "https://cal.com/bridgebeam/standard"
 weight = 2

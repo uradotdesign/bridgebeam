@@ -54,6 +54,10 @@
   --feature-color: #{$gray-600};
   --plan-span-color: #{$blue-500};
   --hr-color: #{$gray-300};
+  --pill-text: #{$gray-800};
+  --pill-text-active: #{$white};
+  --pill-border: #{$gray-800};
+  --pill-background-active: #{$gray-800};
 }
 
 [data-theme="dark"] {
@@ -82,6 +86,10 @@
   --feature-color: #{$gray-300};
   --plan-span-color: #{$blue-300};
   --hr-color: #{$gray-600};
+  --pill-text: #{$white};
+  --pill-text-active: #{$gray-800};
+  --pill-border: #{$white};
+  --pill-background-active: #{$white};
 }
 
 // Smooth Scrolling and Font Family
@@ -234,7 +242,7 @@ a {
 }
 
 .ura-text:hover path.nohover {
-  fill: var(--clr-text) !important; 
+  fill: var(--clr-text) !important;
 }
 
 .bridge {
@@ -280,12 +288,8 @@ a {
     height: 2.5em;
   }
 
-  .col-lg-4:not(:last-of-type) {
+  .col-xl-4:not(:last-of-type) {
     border-right: 1px solid var(--hr-color);
-  }
-
-  .col-lg-4:not(:first-of-type) {
-    padding-left: 2.5rem;
   }
 }
 
@@ -398,7 +402,7 @@ details[open] summary svg {
   & .default {
     display: inline-block;
     padding: 0.1rem 0.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     border-radius: 0.25rem;
     color: var(--default-text);
     border: 1px solid var(--default-border);
@@ -409,7 +413,7 @@ details[open] summary svg {
   & .discount {
     display: inline-block;
     padding: 0.1rem 0.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     border-radius: 0.25rem;
     color: var(--discount-text);
     background-color: var(--discount-background);
@@ -470,6 +474,41 @@ details[open] summary svg {
   }
 }
 
+.nav-pills {
+  & button {
+    font-weight: 500;
+    border: 1px solid var(--pill-border);
+  }
+
+  & .nav-item {
+    &:first-of-type button {
+      border-radius: 1.5rem 0 0 1.5rem;
+      padding-inline: 1.5rem 1.25rem;
+    }
+
+    &:nth-of-type(2) button {
+      border-block: 1px solid var(--pill-border);
+      border-inline: 0;
+      border-radius: 0;
+      padding-inline: 1.25rem;
+    }
+
+    &:last-of-type button {
+      border-radius: 0 1.5rem 1.5rem 0;
+      padding-inline: 1.25rem 1.5rem;
+    }
+  }
+
+  & .nav-link {
+    color: var(--pill-text);
+
+    &.active {
+      color: var(--pill-text-active);
+      background-color: var(--pill-background-active);
+    }
+  }
+}
+
 // Footer
 footer {
   margin-top: auto !important;
@@ -509,16 +548,12 @@ footer {
   z-index: 25;
 }
 
-@include media-breakpoint-down(lg) {
-  #features .col-lg-4:not(:last-of-type) {
+@include media-breakpoint-down(xl) {
+  #features .col-xl-4:not(:last-of-type) {
     border-right: none;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--hr-color);
-  }
-
-  #features .col-lg-4:not(:first-of-type) {
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
   }
 }
 

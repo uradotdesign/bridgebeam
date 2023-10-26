@@ -1,8 +1,9 @@
 +++
+type = "annually"
 title = "Lite"
 subtitle = "Hilfe und Unterstützung bei Designanfragen"
 icon = "1"
-price = "400"
+price = "4.000"
 rate = "100"
 link = "https://buy.stripe.com/7sIaHo61Zaqb7O8aEE"
 call = "https://cal.com/bridgebeam/lite"

@@ -1,8 +1,9 @@
 +++
+type = "monthly"
 title = "Premium"
 subtitle = "Voller Entwurfs- und Entwicklungszyklus"
 icon = "3"
-price = "2200"
+price = "2.200"
 rate = "69"
 saving = "31%"
 link = "https://buy.stripe.com/3cs7vcaifcyjgkEaEG"
