@@ -45,8 +45,12 @@ other = "Monthly"
 other = "6 Months"
 [annually]
 other = "Annually"
-[billed]
+[billed-monthly]
 other = "Billed monthly"
+[billed-sixmonths]
+other = "Billed every 6 months"
+[billed-annually]
+other = "Billed annually"
 [getStarted]
 other = "Subscribe"
 [scheduleCall]

@@ -70,7 +70,7 @@
         <h2 class="text-center pb-0">{{ i18n "choosePlans" | markdownify }}</h2>
         <h4 class="text-center pb-3">{{ i18n "choosePlansSubtitle" }}</h4>
 
-        <div class="row justify-content-center pb-4">
+        <div class="row justify-content-center">
             <div class="d-flex justify-content-center col-12 col-lg-6">
                 <ul class="nav nav-pills mb-3" id="plans-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -84,12 +84,12 @@
                     </li>
                 </ul>
             </div>
-            <p class="text-center">{{ i18n "billed" }}</p>
         </div>
         
 
         <div class="tab-content" id="plans-tabContent">
             <div class="tab-pane show active" id="plans-monthly" role="tabpanel" aria-labelledby="plans-monthly-tab" tabindex="0">
+                <p class="text-center pb-4">{{ i18n "billed-monthly" }}</p>
                 <div class="row">
                     {{ range where .Site.RegularPages "Type" "monthly" }}
                     <div class="col-lg-4 col-12 mb-4 mb-lg-3">
@@ -114,6 +114,7 @@
             </div>
 
             <div class="tab-pane" id="plans-sixmonths" role="tabpanel" aria-labelledby="plans-sixmonths-tab" tabindex="0">
+                <p class="text-center pb-4">{{ i18n "billed-sixmonths" }}</p>
                 <div class="row">
                     {{ range where .Site.RegularPages "Type" "sixmonths" }}
                     <div class="col-lg-4 col-12 mb-4 mb-lg-3">
@@ -137,6 +138,7 @@
             </div>
 
             <div class="tab-pane" id="plans-annually" role="tabpanel" aria-labelledby="plans-annually-tab" tabindex="0">
+                <p class="text-center pb-4">{{ i18n "billed-annually" }}</p>
                 <div class="row">
                     {{ range where .Site.RegularPages "Type" "annually" }}
                     <div class="col-lg-4 col-12 mb-4 mb-lg-3">

@@ -34,7 +34,7 @@ other = "Erledige deine Designanfragen mit erfahrenen Designern, die dein Untern
 [viewPlans]
 other = "Preispläne anzeigen"
 [deliverables]
-other = "Liefergegenstände"
+other = "Leistungen"
 [choosePlans]
 other = "Wähle deinen <span class='accent'>Plan</span>"
 [choosePlansSubtitle]
@@ -45,8 +45,12 @@ other = "Monatlich"
 other = "6 Monate"
 [annually]
 other = "Jährlich"
-[billed]
-other = "Zahle monatlich"
+[billed-monthly]
+other = "Zahle Monatlich"
+[billed-sixmonths]
+other = "Zahle jede 6 Monate"
+[billed-annually]
+other = "Zahle jährlich"
 [getStarted]
 other = "Abonnieren"
 [scheduleCall]
@@ -73,7 +77,7 @@ other = "Frequently Asked Questions"
 other = "Standardpreise"
 
 [saving]
-other = "sparen"
+other = "Ersparnisse"
 
 [hour]
 other = "Std"
