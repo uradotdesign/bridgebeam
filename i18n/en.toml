@@ -45,6 +45,8 @@ other = "Monthly"
 other = "6 Months"
 [annually]
 other = "Annually"
+[billed]
+other = "Billed monthly"
 [getStarted]
 other = "Subscribe"
 [scheduleCall]
@@ -76,16 +78,6 @@ other = "hr"
 
 [month]
 other = "mo"
-
-[month-free]
-one = "month free"
-other = "months free"
-
-[six-months]
-other = "6mo"
-
-[year]
-other = "yr"
 
 [home]
 other = "Home"

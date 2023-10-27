@@ -84,11 +84,12 @@
                     </li>
                 </ul>
             </div>
+            <p class="text-center">{{ i18n "billed" }}</p>
         </div>
         
 
         <div class="tab-content" id="plans-tabContent">
-            <div class="tab-pane fade show active" id="plans-monthly" role="tabpanel" aria-labelledby="plans-monthly-tab" tabindex="0">
+            <div class="tab-pane show active" id="plans-monthly" role="tabpanel" aria-labelledby="plans-monthly-tab" tabindex="0">
                 <div class="row">
                     {{ range where .Site.RegularPages "Type" "monthly" }}
                     <div class="col-lg-4 col-12 mb-4 mb-lg-3">
@@ -112,16 +113,15 @@
                 </div>
             </div>
 
-            <div class="tab-pane fade" id="plans-sixmonths" role="tabpanel" aria-labelledby="plans-sixmonths-tab" tabindex="0">
+            <div class="tab-pane" id="plans-sixmonths" role="tabpanel" aria-labelledby="plans-sixmonths-tab" tabindex="0">
                 <div class="row">
                     {{ range where .Site.RegularPages "Type" "sixmonths" }}
                     <div class="col-lg-4 col-12 mb-4 mb-lg-3">
                         <div class="card text-center h-100">
                             <h3 class="d-flex align-items-center align-self-center"><img class="star me-2" width="32px" src="/img/illustrations/{{ .Page.Params.icon }}.svg" alt="{{ .Title }}" loading="lazy"> {{ .Title }}</h3>
                             <p class="mb-1">{{ .Page.Params.subtitle }}</p>
-                            {{ if eq .Page.Params.weight 1 }}<div class="text-center"><p class="default">{{ i18n "default" }}</p></div>{{ end }}
-                            {{ with .Page.Params.saving }}<div class="text-center"><p class="discount">{{ . }} {{ i18n "month-free" 1 }}</p></div>{{ end }}
-                            <p class="price mb-0">€{{ .Page.Params.price }}<span>/{{ i18n "six-months" }}</span></p>
+                            {{ with .Page.Params.saving }}<div class="text-center"><p class="discount">{{ . }} {{ i18n "saving" }}</p></div>{{ end }}
+                            <p class="price mb-0">€{{ .Page.Params.price }}<span>/{{ i18n "month" }}</span></p>
                             <div class="text-center"><p class="rate">{{ .Page.Params.rate }}€/{{ i18n "hour" }}</p></div>
                             <a class="schedule" href="{{ .Page.Params.call }}" rel="noopener noreferrer" target="_blank">{{ i18n "scheduleCall" }}</a>
                             <hr>
@@ -136,16 +136,15 @@
                 </div>
             </div>
 
-            <div class="tab-pane fade" id="plans-annually" role="tabpanel" aria-labelledby="plans-annually-tab" tabindex="0">
+            <div class="tab-pane" id="plans-annually" role="tabpanel" aria-labelledby="plans-annually-tab" tabindex="0">
                 <div class="row">
                     {{ range where .Site.RegularPages "Type" "annually" }}
                     <div class="col-lg-4 col-12 mb-4 mb-lg-3">
                         <div class="card text-center h-100">
                             <h3 class="d-flex align-items-center align-self-center"><img class="star me-2" width="32px" src="/img/illustrations/{{ .Page.Params.icon }}.svg" alt="{{ .Title }}" loading="lazy"> {{ .Title }}</h3>
                             <p class="mb-1">{{ .Page.Params.subtitle }}</p>
-                            {{ if eq .Page.Params.weight 1 }}<div class="text-center"><p class="default">{{ i18n "default" }}</p></div>{{ end }}
-                            {{ with .Page.Params.saving }}<div class="text-center"><p class="discount">{{ . }} {{ i18n "month-free" }}</p></div>{{ end }}
-                            <p class="price mb-0">€{{ .Page.Params.price }}<span>/{{ i18n "year" }}</span></p>
+                            {{ with .Page.Params.saving }}<div class="text-center"><p class="discount">{{ . }} {{ i18n "saving" }}</p></div>{{ end }}
+                            <p class="price mb-0">€{{ .Page.Params.price }}<span>/{{ i18n "month" }}</span></p>
                             <div class="text-center"><p class="rate">{{ .Page.Params.rate }}€/{{ i18n "hour" }}</p></div>
                             <a class="schedule" href="{{ .Page.Params.call }}" rel="noopener noreferrer" target="_blank">{{ i18n "scheduleCall" }}</a>
                             <hr>

@@ -416,6 +416,7 @@ details[open] summary svg {
     margin-bottom: 0.5rem;
     border-radius: 0.25rem;
     color: var(--discount-text);
+    border: 1px solid transparent;
     background-color: var(--discount-background);
     max-width: max-content;
   }
