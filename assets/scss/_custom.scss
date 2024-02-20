@@ -397,7 +397,7 @@ details[open] summary svg {
     padding: 0.1rem 0.5rem;
     border-radius: 0.25rem;
     background-color: var(--pill-background);
-    max-width: min-content;
+    max-width: max-content;
   }
 
   & .default {
