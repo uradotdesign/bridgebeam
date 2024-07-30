@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on Bridgebeam</title>
+    <link>https://bridgebeam.design/en/features/</link>
+    <description>Recent content in Features on Bridgebeam</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>hello@ura.design (Ura Design)</managingEditor>
+    <webMaster>hello@ura.design (Ura Design)</webMaster>
+    <atom:link href="https://bridgebeam.design/en/features/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick turnaround</title>
+      <link>https://bridgebeam.design/en/features/turnaround/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/en/features/turnaround/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>No overhead</title>
+      <link>https://bridgebeam.design/en/features/paperwork/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/en/features/paperwork/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flexible</title>
+      <link>https://bridgebeam.design/en/features/flexible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/en/features/flexible/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

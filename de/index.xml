@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bridgebeam</title>
+    <link>https://bridgebeam.design/de/</link>
+    <description>Recent content on Bridgebeam</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <managingEditor>hello@ura.design (Ura Design)</managingEditor>
+    <webMaster>hello@ura.design (Ura Design)</webMaster>
+    <atom:link href="https://bridgebeam.design/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://bridgebeam.design/de/clients/mozilla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/clients/mozilla/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lite</title>
+      <link>https://bridgebeam.design/de/plans/annually/lite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/annually/lite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lite</title>
+      <link>https://bridgebeam.design/de/plans/monthly/lite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/monthly/lite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lite</title>
+      <link>https://bridgebeam.design/de/plans/sixmonths/lite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/sixmonths/lite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Schnell</title>
+      <link>https://bridgebeam.design/de/features/turnaround/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/features/turnaround/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UX-Checks</title>
+      <link>https://bridgebeam.design/de/deliverables/ux-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/deliverables/ux-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://bridgebeam.design/de/clients/eclipse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/clients/eclipse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Barrierefreiheitsprüfungen</title>
+      <link>https://bridgebeam.design/de/deliverables/accessibility-audit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/deliverables/accessibility-audit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kein Papierkram</title>
+      <link>https://bridgebeam.design/de/features/paperwork/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/features/paperwork/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Standard</title>
+      <link>https://bridgebeam.design/de/plans/annually/standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/annually/standard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Standard</title>
+      <link>https://bridgebeam.design/de/plans/monthly/standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/monthly/standard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Standard</title>
+      <link>https://bridgebeam.design/de/plans/sixmonths/standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/sixmonths/standard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://bridgebeam.design/de/clients/tor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/clients/tor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design-Coaching</title>
+      <link>https://bridgebeam.design/de/deliverables/design-coaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/deliverables/design-coaching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flexibel</title>
+      <link>https://bridgebeam.design/de/features/flexible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/features/flexible/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Professional</title>
+      <link>https://bridgebeam.design/de/plans/annually/professional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/annually/professional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Professional</title>
+      <link>https://bridgebeam.design/de/plans/monthly/professional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/monthly/professional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Professional</title>
+      <link>https://bridgebeam.design/de/plans/sixmonths/professional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/plans/sixmonths/professional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://bridgebeam.design/de/clients/tud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/clients/tud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Branding</title>
+      <link>https://bridgebeam.design/de/deliverables/branding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/deliverables/branding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://bridgebeam.design/de/clients/rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/clients/rust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UX/UI Design</title>
+      <link>https://bridgebeam.design/de/deliverables/ux-ui-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/deliverables/ux-ui-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://bridgebeam.design/de/clients/otf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/clients/otf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend-Entwicklung</title>
+      <link>https://bridgebeam.design/de/deliverables/frontend-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/deliverables/frontend-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Impressum</title>
+      <link>https://bridgebeam.design/de/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>hello@ura.design (Ura Design)</author>
+      <guid>https://bridgebeam.design/de/imprint/</guid>
+      <description>Ura Design wird betrieben von (Impressum nach § 5 TMG, ebenso verantwortlich für den Inhalt nach § 55 Abs. 2 RStV):&#xA;Elio Qoshi&#xA;c/o Cultivation Space&#xA;Aufgang 4&#xA;Gottschedstraße 4&#xA;13357 Berlin&#xA;Steuernummer: 34/481/01445&#xA;USt.-IDNr: DE357155567&#xA;Email: hello@ura.design&#xA;Website: https://ura.design</description>
+    </item>
+  </channel>
+</rss>
