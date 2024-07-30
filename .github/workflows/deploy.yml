@@ -53,6 +53,10 @@ jobs:
     - name: Create CNAME file
       run: echo 'bridgebeam.design' > public/CNAME
 
+    - name: Remove unwanted files
+      run: |
+        find public/de public/en -type d \( -name features -o -name clients -o -name deliverables -o -name plans \) -exec rm -rf {} +
+
     - name: Beautify HTML files
       run: find public/ -type f -name "*.html" -exec js-beautify --html -r -m 1 "{}" \;
 
